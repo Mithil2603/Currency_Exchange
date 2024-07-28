@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Signika:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7E8D1;
+}
+
+.container{
+    width: max-content;
+    text-align: center;
+    padding: 2rem;
+    /* background-color: #f4e4ba; */
+    background-color: #A7BEAE;
+    border-radius: .5rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    @media (max-width: 411px){
+        display: block;
+    }
+}
+
+.select-container{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    @media (max-width: 411px){
+        justify-content: center;
+    }
+}
+
+.fix{
+    align-self: center;
+
+    @media (max-width: 411px){
+        margin: 2rem;
+    }
+}
+
+.msg{
+    margin: auto;
+    margin: 1rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.amount{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.amount p{
+    font-weight: bold;
+    font-size: large;
+}
+
+.amount input{
+    border: 1px solid gray;
+    border-radius: .5rem;
+    height: 1.5rem;
+    padding: .2rem .5rem;
+    margin-left: .5rem;
+    font-size: 1rem;
+}
+
+.from p, .to p{
+    font-weight: bold;
+}
+
+.select-container{
+    border: 1px solid #E7E8D1;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.select-container select{
+    padding: .2rem;
+    border: 1px solid gray;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+form button{
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid gray;
+    font-weight: bold;
+    background-color: #E7E8D1;
+    font-size: 1.2rem;
+}
+
+form button:hover {
+    background-color: #A7BEAE;
+    transition: .5s;
+    cursor: pointer;
+}
